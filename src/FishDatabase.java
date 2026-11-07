@@ -5,8 +5,6 @@ public class FishDatabase {
     private final List<Fish> fish = new ArrayList<>();
 
     public FishDatabase() {
-        // Sample species data. Prices and catch weights are prototype balancing values,
-        // not verified official Fish It game data.
         fish.add(new Fish("Sardine", "Sardina pilchardus", Rarity.COMMON, "saltwater", 2, 1, 3, 5000));
         fish.add(new Fish("Anchovy", "Engraulidae", Rarity.COMMON, "saltwater", 2, 1, 2, 4500));
         fish.add(new Fish("Mackerel", "Scombridae", Rarity.UNCOMMON, "saltwater", 5, 2, 8, 2500));
@@ -20,7 +18,6 @@ public class FishDatabase {
         fish.add(new Fish("Goblin Shark", "Mitsukurina owstoni", Rarity.MYTHIC, "saltwater", 120, 100, 700, 25));
         fish.add(new Fish("Giant Oarfish", "Regalecus glesne", Rarity.MYTHIC, "saltwater", 140, 100, 270, 15));
 
-        // Secret tier is intentionally reserved for mythical creatures.
         fish.add(new Fish("Leviathan", "Mythological sea monster", Rarity.SECRET, "mythical", 500, 1000, 10000, 2, true, 1000));
         fish.add(new Fish("Kraken", "Mythological sea monster", Rarity.SECRET, "mythical", 450, 500, 8000, 2, true, 500));
         fish.add(new Fish("Jormungandr", "Norse world serpent", Rarity.SECRET, "mythical", 600, 1000, 15000, 1, true, 1000));
